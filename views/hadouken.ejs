@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>test</title>
         <%- include('../partials/meta'); -%>
         <%- include('../partials/scripts'); -%>
+        <script type="text/javascript" src="js/crafty.min.js"></script>
+  		<script type="text/javascript" src="hadouken/game.js"></script>
     </head>
 
   <body>
 
   <%- include('../partials/header'); -%>
 
-  <p style="color:blue">hadouken</p>
-  
+<body class="index loading">
+	
+		<%- include('../partials/header-article'); -%>
+		
+				<header class="special container" style="margin-bottom: 2em">
+					<h2>Hadouken Hero Experiment</h2>			
+					<p>Move using the directional arrows and use "z" to fireball. Pump up the volume for nostalgia.</p>		
+				</header>
+
+ 			<div id="cr-stage" style="margin: 0 auto 3em auto"></div>
+
+		
   <%- include('../partials/footer'); -%>
 
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/meta'); -%>
+        <%- include('../partials/scripts'); -%>
+        <script src="panorama/jquery-migrate-1.2.1.js"></script>
+        <script src="panorama/zeta_slider.js" ></script>
+		<link rel="stylesheet" type="text/css" href="panorama/style.css" media="all">
+		<link rel="stylesheet" type="text/css" href="panorama/media-queries.css" media="all">
+    </head>
+
+  <body>
+
+  <%- include('../partials/header'); -%>
+
+<body class="index loading">
+	
+		<%- include('../partials/header-article'); -%>
+
+				<header class="special container" style="margin-bottom: 2em">
+					<h2>The Allen Road Project</h2>			
+					<p>Drag or use arrows to navigate</p>		
+				</header>
+
+ 			<div class="zetaSlider" id="zetaSlider">
+		  <div class="zetaHolder">
+		    <div class="zetaWrapper">
+		      <div class="zetaEmpty isDraggingFalse" style="overflow: hidden;width: 5434px;">
+		         <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/1.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/2.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/3.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/4.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/5.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/6.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/7.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/8.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/9.jpg" alt="" class=""></div>
+		        <div class="zetaImageBox" style="display: block;padding:0;margin:0 "><img src="panorama/allenroad/10.jpg" alt="" class=""></div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="zetaControls"> <a class="zetaBtnPrev" href="#" >Previous</a> <a class="zetaBtnNext" href="#">Next</a> </div>
+		  <div class="zetaWarning">
+		    <div class="navigate">Navigate by</div>
+		    <div class="drag">Dragging</div>
+		    <div class="arrow">Arrows</div>
+		    <div class="keys">Keyboard</div>
+		    <div class="clear"></div>
+		  </div>
+		</div>
+
+		
+  <%- include('../partials/footer'); -%>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+	  $('#zetaSlider').zetaSlider();
+	});
+	</script>
+
+</body>
+</html>

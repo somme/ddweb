@@ -7,6 +7,8 @@ var app = express();
 // routes
 var routes = require('./routes/index');
 var hadouken = require('./routes/hadouken');
+var allenRoad = require('./routes/allenRoad');
+var ecards = require('./routes/ecards');
 
 
 // view engine setup
@@ -18,6 +20,8 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/hadouken-hero', hadouken);
+app.use('/allen-road', allenRoad);
+app.use('/marie-curie-ecards', ecards);
 
 
 app.use(favicon(__dirname + '/public/images/favicon.ico'));

@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>test</title>
         <%- include('../partials/meta'); -%>
         <%- include('../partials/scripts'); -%>
     </head>
 
-  <body>
-
-  <%- include('../partials/header'); -%>
-
   <body class="index loading">
-  
-    <!-- Header -->
-      <header id="header" class="alt">
-        <h1 id="logo"><a href="index.html">dragondrop</span></a></h1>
-        <nav id="nav">
-          <ul>
-            <li class="current"><a href="index.html">Welcome</a></li>
-            <li class="submenu">
-              <a href="">MENU</a>
-              <ul>
-                <li><a href="#about" class="scrolly">About</a></li>
-                <li><a href="#services" class="scrolly">Services</a></li>
-                <li><a href="#samples" class="scrolly">Samples</a></li>
-                <li><a href="#contact" class="scrolly">Contact</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact" class="button special scrolly"><i class="fa fa-envelope"></i> GET IN TOUCH</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    
+    <%- include('../partials/header'); -%>
+   
     <!-- Banner -->   
       <section id="banner" >
         <div class="inner">
@@ -377,14 +354,14 @@
               </div>
               <div class="6u">
                 <section>
-                  <a href="hadouken-hero.html" class="image feature"><img src="images/img-hadouken.jpg" alt=""></a>
+                  <a href="/hadouken-hero" class="image feature"><img src="images/img-hadouken.jpg" alt=""></a>
                   <header>
-                    <h3><a href="hadouken-hero.html" >Hadouken Hero</a></h3>
+                    <h3><a href="/hadouken-hero" >Hadouken Hero</a></h3>
                   </header>
                   <span class="uppercase">/ Experiment / Hackday /</span>
                   <p>This was my Hackday entry, a competition open to CBS employees across the world. The brief was to create something cool using HTML5 and Canvas in 24 hours and on top of your daily work. I decided to build a prototype game for <a href="http://www.gamespot.com/" target="_blank">Gamespot</a> using the editor as the main character. Even though it wasn't finished and I didn't win it was fun doing it.</p>
                   <p>TOOLS: HTML 5, Canvas, JQuery, Javascript.</p>
-                  <a href="hadouken-hero.html"><i class="fa fa-rocket"></i> View sample</a> 
+                  <a href="/hadouken-hero"><i class="fa fa-rocket"></i> View sample</a> 
                 </section>
               </div>
             </div>
@@ -392,14 +369,14 @@
             <div class="row">
               <div class="6u">
                 <section>
-                  <a href="allen-road-project.html" class="image feature"><img src="images/img-allen.jpg" alt=""></a>
+                  <a href="/allen-road" class="image feature"><img src="images/img-allen.jpg" alt=""></a>
                   <header>
-                    <h3><a href="allen-road-project.html">The Allen Road Project</a></h3>
+                    <h3><a href="/allen-road">The Allen Road Project</a></h3>
                   </header>
                   <span class="uppercase">/ Photo Retouching / Photo Editing /</span>
                   <p>In 1972 Richard Scott photographed the whole length of the north side of <a href="https://www.google.co.uk/maps/place/Allen+Rd,+Stoke+Newington,+London+N16+8RY/@51.5553253,-0.0812522,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x48761c886996779d:0xfcf229899a5cd13e!2sAllen+Rd,+Stoke+Newington,+London+N16+8RY!3b1!3m1!1s0x48761c886996779d:0xfcf229899a5cd13e" target="_blank">Allen Road</a>, N16 London. I was commissioned to digitally re-constructed the vintage photographs and create a complete panorama of the whole street. I was told the print is a permanent exhibition at the <a href="http://www.hackney.gov.uk/cm-museum.htm" target="_blank">Hackney Museum</a>.</p>
                   <p>TOOLS:  Photoshop.</p>
-                  <a href="allen-road-project.html"><i class="fa fa-rocket"></i> View</a>                   
+                  <a href="/allen-road"><i class="fa fa-rocket"></i> View</a>                   
                 </section>
               </div>
               <div class="6u">
@@ -472,31 +449,16 @@
         
       </article>
 
-      <!-- Footer -->
-      <footer id="footer">
+      <%- include('../partials/footer'); -%>
       
-      
-        <ul class="icons">
-          <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-          <li><a href="#" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
-        </ul> 
-        
-        <span class="copyright">&copy; Dragon Drop Limited 2015</span>
-      
-      </footer>
 
     <script type="text/javascript">
       var images = ['bridge2.jpg', 'shoes.jpg', 'grass.jpg', 'flower.jpg', 'fountain.jpg', 'bridge.jpg', 'leaf.jpg', 'trees.jpg'];
       
       $('#banner')
       .css('background-image', 'url(images/bgtest.svg), url(css/images/overlay.png), url(images/' + images[Math.floor(Math.random() * images.length)] + ')');
-      
-
     </script>
   
-  <%- include('../partials/footer'); -%>
-
 
 </body>
 </html>
