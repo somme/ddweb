@@ -117,7 +117,7 @@
 /* Banner */
 
 	#banner {
-		background-size: 20em, auto, cover;
+		background-size: auto, cover;
 		padding: 6em 0;
 	}
 
