@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
+var robots = require('robots.txt');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use('/hadouken-hero', hadouken);
 app.use('/allen-road', allenRoad);
 app.use('/marie-curie-ecards', ecards);
 app.use('/email', email);
+app.use(robots(__dirname + '/robots.txt'));
 
 
 
