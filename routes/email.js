@@ -13,8 +13,8 @@ router.post('/', function(req, res) {
         "from_email": req.body.email,
         "from_name": req.body.name,
         "to": [{
-                "email": "sommes.email@gmail.com",
-                "name": "Somme",
+                "email": "info@dragondrop.co",
+                "name": "Dragon Drop Info",
                 "type": "to"
             }],
         "tags": [
