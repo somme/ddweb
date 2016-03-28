@@ -14,6 +14,9 @@ var allenRoad = require('./routes/allenRoad');
 var ecards = require('./routes/ecards');
 var email = require('./routes/email');
 
+//enviroment
+var env = process.env.NODE_ENV || 'development';
+
 
 
 // view engine setup
