@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/meta'); -%>
+        <%- include('../partials/scripts'); -%>
+    </head>
+
+  <body class="index loading">
+
+    <%- include('../partials/header'); -%>
+
+    <!-- Banner -->
+      <section id="banner" >
+        <div class="inner">
+          <header>
+            <h2>Under Construction</h2>
+          </header>
+          <span class="icon feature fa-wrench"></span>
+          <p>Coming soon...</p>
+
+          <footer>
+            <ul class="buttons vertical">
+              <li></li>
+            </ul>
+          </footer>
+
+        </div>
+      </section>
+
+
+
+    <script type="text/javascript">
+      var images = ['bridge2.jpg', 'shoes.jpg', 'grass.jpg', 'flower.jpg', 'fountain.jpg', 'bridge.jpg', 'leaf.jpg', 'trees.jpg'];
+
+      $('#banner')
+      .css('background-image', 'url(css/images/overlay.png), url(images/' + images[Math.floor(Math.random() * images.length)] + ')');
+    </script>
+
+
+</body>
+</html>
