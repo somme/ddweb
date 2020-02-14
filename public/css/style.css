@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 
 
@@ -301,9 +300,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
 			font-style: normal;
-			font-weight: normal;
 		}
 
 		.icon.circle {
@@ -887,7 +884,7 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+		background-image: url("../images/light-tl.svg"), url("../images/light-tr.svg"), url("../images/overlay.png"), url("../images/banner.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -1168,4 +1165,18 @@ display:none;
     #sampleso .portfolio-item {
         margin: 0 0 30px;
     }
+}
+
+.font-normal{
+	font-size: .8em;
+	font-weight: 100;
+	text-transform: none;
+}
+.bullets{
+	list-style: circle;
+	margin-left: 1em;
+}
+.bullets-number{
+	list-style: decimal;
+	margin-left: 1em;
 }

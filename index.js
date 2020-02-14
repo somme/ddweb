@@ -13,6 +13,7 @@ var hadouken = require('./routes/hadouken');
 var allenRoad = require('./routes/allenRoad');
 var ecards = require('./routes/ecards');
 var email = require('./routes/email');
+var appvia = require('./routes/appvia');
 
 //enviroment
 var env = process.env.NODE_ENV || 'development';
@@ -32,6 +33,7 @@ app.use('/hadouken-hero', hadouken);
 app.use('/allen-road', allenRoad);
 app.use('/marie-curie-ecards', ecards);
 app.use('/email', email);
+app.use('/casestudy/appvia', appvia);
 app.use(robots(__dirname + '/robots.txt'));
 
 
@@ -41,5 +43,3 @@ app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
 });
-
-
