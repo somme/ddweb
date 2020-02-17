@@ -665,7 +665,7 @@
 				#header nav ul li.submenu > a:before {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
-					font-family: FontAwesome;
+					font-family: "Font Awesome 5 Free";
 					font-style: normal;
 					font-weight: normal;
 				}
@@ -929,7 +929,7 @@
 		#topButton .toggle:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: "Font Awesome 5 Free";
 			font-style: normal;
 			font-weight: normal;
 		}
@@ -946,6 +946,7 @@
 			top: 0;
 			width: 100%;
 			z-index: 1;
+			font-weight: 900;
 		}
 
 		#topButton .toggle:after {
@@ -972,9 +973,9 @@
 		#sideButton .toggle:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: "Font Awesome 5 Free";
 			font-style: normal;
-			font-weight: normal;
+			font-weight: 900;
 		}
 
 		#sideButton .toggle:before {
