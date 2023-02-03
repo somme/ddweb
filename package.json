@@ -1,7 +1,7 @@
 {
   "name": "node-js-getting-started",
   "version": "0.1.2",
-  "description": "A sample Node.js app using Express 4",
+  "description": "A Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -16,7 +16,7 @@
     "serve-favicon": "^2.2.0"
   },
   "engines": {
-    "node": "6.11.1"
+    "node": "16.15.1"
   },
   "repository": {
     "type": "git",
