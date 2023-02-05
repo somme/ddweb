@@ -16,11 +16,7 @@
     "serve-favicon": "^2.2.0"
   },
   "engines": {
-    "node": "16.18.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "node": "^16.19.0"
   },
   "keywords": [
     "node",
