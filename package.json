@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "ddweb",
   "version": "0.1.2",
-  "description": "A Node.js app using Express 4",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -16,7 +16,7 @@
     "serve-favicon": "^2.2.0"
   },
   "engines": {
-    "node": "16.19.0"
+    "node": "16.18.1"
   },
   "repository": {
     "type": "git",
