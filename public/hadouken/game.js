@@ -113,7 +113,8 @@ Crafty.c("health",{
 
       twoway: function(speed,jump) {
         //if(speed) this._speed = speed*4;
-               if(speed) this._speed=speed;this._speed*4;
+           if(speed) this._speed=speed;
+            //this._speed*4;
         var move = this.__move;
 
 
@@ -213,7 +214,7 @@ Crafty.c("health",{
 
 
                 if(e.keyCode === Crafty.keys.RIGHT_ARROW) {
-
+console.log(  this.move)
                     this.move.right = false;
                     if(!this.isPlaying("walk_right"))
                     this.stop().animate("walk_right", 20);
