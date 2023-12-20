@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/meta'); -%>
+    <%- include('../partials/scripts'); -%>
+  </head>
+
+<body class="index loading">
+
+		<%- include('../partials/header-article'); -%>
+
+    <section id="banner" style="margin-bottom: 20px">
+      <div class="inner">
+        <header>
+          <h2>GovSearch</h2>
+        </header>
+        <p>Casestudy</p>
+      </div>
+    </section>
+
+        <section class="wrapper style4 container">
+          <div class="row oneandhalf">
+            <div class="12u">
+
+                <div class="content">
+                  <section>
+
+                    <h3>The Challenge</h3>
+                    <p>
+                      The immense volume of over 700,000 pages on GOV.UK presents a significant challenge in terms of content management, particularly when it comes to conducting manual audits and locating specific information.
+                    </p>
+
+                    <h3>The solution</h3>
+                    <p>
+                      GovSearch, a “business intelligence tool” that enables users to audit the GOV.UK content estate.
+                    </p>
+
+                    <h3>The process</h3>
+
+                    <div class="row">
+                      <div class="3u">
+                        <section class="special">
+                          <i class="icon feature fas fa-search-plus"></i>
+
+                          <h3>Research</h3>
+                            <ul class="font-normal">
+                              <li>Current tools</li>
+                              <li>User interviews</li>
+                              <li>Data analysis</li>
+                            </ul>
+                        </section>
+                      </div>
+                      <div class="3u">
+                        <section class="special">
+                          <span class="icon feature fas fa-pencil-ruler"></span>
+                          <h3>Define</h3>
+                            <ul class="font-normal">
+                              <li>User needs and types</li>
+                              <li>Feature list and backlog</li>
+                              <li>Userflows and journeys</li>
+                            </ul>
+                        </section>
+                      </div>
+                      <div class="3u">
+                        <section class="special">
+                          <span class="icon feature fas fa-drafting-compass"></span>
+                          <h3>Design</h3>
+                            <ul class="font-normal">
+                              <li>Figma designs and clickable prototypes</li>
+                            </ul>
+                        </section>
+                      </div>
+                      <div class="3u">
+                        <section class="special">
+                          <span class="icon feature fas fa-vials"></span>
+                          <h3>Test</h3>
+                            <ul class="font-normal">
+                              <li>Usability tests</li>
+                              <li>Iterate and re-test</li>
+                            </ul>
+                        </section>
+                      </div>
+                    </div>
+
+                    <header class="special">
+                      <span class="icon fas fa-microscope"></span>
+                      <h2>Research</h2>
+                    </header>
+
+                    <div class="row">
+                      <div class="3u">
+                        <h3>Method</h3>
+                      </div>
+                      <div class="9u">
+                        <h3>Discoveries</h3>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="3u">
+                        <h4>Current tools</h4>
+                      </div>
+                      <div class="9u">
+                        <ul class="bullets">
+                          <li>Users currently employ a variety of tools, including Google search and analytics as well as the GOV.UK site search, for their information needs</li>
+                          <li>These tools, however, are predominantly manual and lack specificity in the context of content auditing</li>
+                          <li>Following the collection of data from numerous sources, Excel is utilised to organise and filter the data</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="3u">
+                        <h4>User interviews</h4>
+                      </div>
+                      <div class="9u">
+                        <p>After engaging with end users, I identified the primary issues in the existing workflow as follows:</p>
+                        <ul class="bullets">
+                          <li>The amount of time required to carry out these manual tasks is excessive</li>
+                          <li>The substantial time dedicated to collating and analysing data leaves content designers with insufficient time for their regular duties</li>
+                          <li>The absence of a unified source of truth leads to noticeable duplication of effort</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  <div class="row">
+                    <div class="3u">
+                      <h4>Data analysis</h4>
+                    </div>
+                    <div class="9u">
+                      <p style="margin-bottom:10px">In order to comprehend the metadata and data structure of the pages, I focused on several key aspects:</p>
+                      <ul class="bullets">
+                        <li>Due to the use of multiple publications and applications for content publishing, variations in data formats and structures are present</li>
+                        <li>There are complications related to taxonomy tags, including their excessive number and the fact that some users are either unfamiliar with or have never utilised taxons in their publishing processes</li>
+                        <li>The existence of numerous types of pages, each with its own set of metadata, adds to the complexity</li>
+                        <li>The current state of taxonomy tags is disorganised and necessitates either a comprehensive site-wide audit or the implementation of a more effective solution to maintain consistency</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                <header class="special">
+                  <span class="icon fas fa-pencil-ruler"></span>
+                  <h2>Define</h2>
+                </header>
+
+                <div class="row">
+                  <div class="12u">
+                    <h3>User needs and types</h3>
+                    <p style="margin-bottom:10px">
+                      The user base is segmented into three distinct categories, each with varying levels of expertise and usage patterns:
+                    </p>
+                    <ol class="bullets-number">
+                      <li><strong>Novice:</strong> These are primarily senior leads who do not engage in content publishing regularly but occasionally explore the tool</li>
+                      <li><strong>Mid-Level:</strong> This group consists of users who access the tool two to three times a month, primarily for investigating content patterns</li>
+                      <li><strong>Power Users:</strong> These are individuals who utilise the tool daily for content auditing and to fulfil departmental requests</li>
+                    </ol>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="12u">
+                    <h3>Feature list and backlog</h3>
+                    <p>Following the collection of findings, several were transformed into actionable user stories and features, for example:</p>
+                    <ul class="bullets">
+                      <li>A feature allowing users to search for specific links on pages</li>
+                      <li>The capability for users to customise and rearrange headers on the results page for enhanced usability</li>
+                      <li>Functionality that enables users to view the frequency of keyword occurrences across content</li>
+                      <li>Advanced options for sorting and filtering results to streamline the data analysis process</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="12u">
+                    <h3>Userflows and Journeys</h3>
+                    <p style="margin-bottom:10px">Here is an example of the simple user journey for ths app</p>
+                </div>
+
+              </div>
+
+              <div class="image feature">
+                <img src="images/Journey.png" alt="wireframes image">
+              </div>
+
+
+              <header class="special">
+                <span class="icon fas fa-drafting-compass"></span>
+                <h2>Design</h2>
+              </header>
+
+              <div class="row">
+                <div class="12u">
+                  <h3>Leveraging Figma, I efficiently created initial design mockups, and then, utilising the GDS prototyping kit, I developed clickable versions of these designs. This process allowed for rapid iteration and user feedback on the proposed interfaces.</h3>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="3u">
+                  <h4>A/B Testing designs</h4>
+                </div>
+                <div class="9u">
+                  <p>I tested different ways of presenting the results page. A table view Vs a show/hide summary view</p>
+                  <div class="image feature">
+                    <img src="images/govsearch-a-b.png" alt="wireframes 2 image">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="3u">
+                  <h4>Clickable prototypes</h4>
+                </div>
+                <div class="9u">
+                  <p>By developing prototypes that closely mimic the actual product in terms of appearance, functionality, and user interaction, more accurate and effective results are achieved. By integrating real data into the prototype, I was able to conduct user testing that yielded high-quality insights, further enhancing the development process.</p>
+                  <div class="image feature">
+                    <img src="images/govsearch-screen.png" alt="govsearch-screen-2 image">
+                  </div>
+                </div>
+              </div>
+
+              <header class="special">
+                <span class="icon fas fa-vials"></span>
+                <h2>Test</h2>
+              </header>
+
+              <div class="row">
+                <div class="3u">
+                  <h3>Method</h3>
+                </div>
+                <div class="9u">
+                  <h3>Discoveries and insights</h3>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="3u">
+                  <p>Usability testing</p>
+                </div>
+                <div class="9u">
+                  <ul class="bullets">
+                    <li><strong>Preference for Tables:</strong> Users preferred tables because they allow easy comparison of each row, which is crucial for analysing results</li>
+                    <li><strong>Customisation Importance:</strong> Given the diversity of user types and their unique usage patterns, the ability to customise the interface is essential</li>
+                    <li><strong>Clarification of Labels:</strong> Some users experienced confusion, particularly with labels like "All" versus "Any keywords", indicating a need for more explicit explanations</li>
+                    <li><strong>Flexible Customisation:</strong> Users would benefit from being able to tailor their views and date ranges according to the specific task at hand and the type of content being analysed</li>
+                    <li><strong>Spacious Table Layout:</strong> There is a desire for a more spacious table view for results. Some users felt that the filters overshadowed the results</li>
+                    <li><strong>Advanced Filtering:</strong> Users expect the functionality to further refine their search results by document type</li>
+                    <li><strong>Taxonomy Flexibility</strong>: Users focusing on taxons expressed a need for greater flexibility in choosing and customising the metadata to include in their table views</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="12u">
+                  <h3>Next steps ..</h3>
+                  <ul class="bullets">
+                    <li>Create tickets to address new features and prioritise</li>
+                    <li>Monitor feedback and analytics</li>
+                    <li>Build and test new features</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="12u">
+                  <h3>Three things I learned</h3>
+                  <p style="margin-bottom:10px">Reflecting on this project I learned a few things:</p>
+                  <ul class="bullets">
+                    <li>Priorities can often change</li>
+                    <li>Good design makes things obvious</li>
+                    <li>Good design puts users in control</li>
+                  </ul>
+                </div>
+              </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <%- include('../partials/footer'); -%>
+
+  <script type="text/javascript">
+    var images = ['bridge2.jpg', 'shoes.jpg', 'grass.jpg', 'flower.jpg', 'fountain.jpg', 'bridge.jpg', 'leaf.jpg', 'trees.jpg'];
+
+    $('#banner')
+    .css('background-image', 'url(css/images/overlay.png), url(images/' + images[Math.floor(Math.random() * images.length)] + ')');
+  </script>
+
+
+</body>
+</html>
