@@ -3,7 +3,6 @@
     <head>
         <%- include('partials/meta'); -%>
         <%- include('partials/scripts'); -%>
-        <script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
     </head>
 
   <%- include('partials/header'); -%>
@@ -14,14 +13,14 @@
 
 				<header class="special container" style="margin-bottom: 2em">
 					<h2>Hadouken Hero Experiment</h2>
-					<p>Move using the directional arrows and use "f" to fireball. Have your sound on for nostalgia.</p>
+					<p>Move using the directional arrows and use "z" to fireball. Pump up the volume for nostalgia.</p>
 				</header>
 
- 			<div id="game" style="margin: 0 auto 3em auto"></div>
+ 			<div id="cr-stage" style="margin: 0 auto 3em auto"></div>
 
 
   <%- include('partials/footer'); -%>
-
+  <script type="text/javascript" src="js/crafty.min.js"></script>
 <script type="text/javascript" src="hadouken/game.js"></script>
 
 </body>
