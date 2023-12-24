@@ -1,27 +1,29 @@
 var express = require('express');
 
-var sendgrid  = require('sendgrid')(process.env.SENDGRIDAPI);
+const sgMail = require('@sendgrid/mail')
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 var router = express.Router();
 
-
-
 router.post('/', function(req, res) {
+    const msg = {
+    to: 'somme@dragondrop.ltd',
+    from: 'somme@dragondrop.ltd',
+    subject: 'Dragon Drop Contact Form',
+    text: req.body.message,
+    html: `<p><strong>NAME:</strong> ${req.body.name}</p><p><strong>EMAIL:</strong> ${req.body.email}</p><p><strong>MESSAGE:</strong> ${decodeURI(req.body.message)}</p>'`,
+  };
 
-    var email = new sendgrid.Email({
-        html:     '<p><strong>NAME:</strong> '+req.body.name+'</p><p><strong>EMAIL:</strong> '+req.body.email+'</p><p><strong>MESSAGE:</strong> '+decodeURI(req.body.message)+'</p>',
-        to: ['info@dragondrop.co'],
-        from:     req.body.email,
-        fromname: req.body.name,
-        subject:  'Dragon Drop Contact Form',
-        text:     req.body.message
-    });
-    sendgrid.send(email, function(err, json) {
-      if (err) { return console.error(err); }
-      console.log(json);
-    });
-
+  sgMail
+  .send(msg)
+  .then(() => {
+    console.log('Email sent')
     res.send('ok');
+  })
+  .catch((error) => {
+    console.error(error.response.body.errors)
+  })
+
 });
 
 module.exports = router;

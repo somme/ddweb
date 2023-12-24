@@ -79,7 +79,7 @@ $(document).ready(function() {
       .animate("jump_up", 0)
       .bind("KeyDown", function(e) {
        if (e.key == Crafty.keys.LEFT_ARROW) {
-            this.animate("walk_left", -1);
+          this.animate("walk_left", -1);
         } else if (e.key == Crafty.keys.RIGHT_ARROW) {
           this.animate("walk_right", -1);
         } else if (e.key == Crafty.keys.UP_ARROW) {
@@ -119,17 +119,9 @@ $(document).ready(function() {
       }
   })
   .bind("KeyUp", function(e) {
-
-    if (e.key == Crafty.keys.LEFT_ARROW) {
-      player.pauseAnimation()
+    if (e.key == Crafty.keys.LEFT_ARROW || e.key == Crafty.keys.RIGHT_ARROW || e.key == Crafty.keys.UP_ARROW) {
+      this.pauseAnimation()
     }
-    if (e.key == Crafty.keys.RIGHT_ARROW) {
-      player.pauseAnimation()
-    }
-    if (e.key == Crafty.keys.UP_ARROW) {
-      player.pauseAnimation();
-    }
-
   })
   .collision()
   .onHit("wall_left", function() {

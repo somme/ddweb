@@ -220,39 +220,37 @@
         <header class="special container">
           <span class="icon fa fa-envelope"></span>
           <h2>Get In Touch</h2>
-          <p>Feel free to <a href="mailto:somme@dragondrop.ltd">drop me a line</a>, I'd love to hear from you and discuss how I can help with your project.</p>
+          <p>Feel free to drop me a line, I'd love to hear from you and discuss how I can help with your project.</p>
         </header>
 
-
-<!--
           <section class="wrapper style4 special container ">
 
               <div class="content">
                 <form action="/" method="post" name="contact_form">
-                  <div class="row half no-collapse-1">
-                    <div class="6u field">
-                      <input type="text" name="name" placeholder="Name">
+                  <div id="contactForm">
+                    <div class="row half no-collapse-1">
+                      <div class="6u field">
+                        <input type="text" name="name" placeholder="Name">
+                      </div>
+                      <div class="6u field">
+                        <input type="text" name="email" placeholder="Email">
+                      </div>
                     </div>
-                    <div class="6u field">
-                      <input type="text" name="email" placeholder="Email">
+                    <div class="row half">
+                      <div class="12u field">
+                        <textarea name="message" placeholder="Message" rows="7"></textarea>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row half">
-                    <div class="12u field">
-                      <textarea name="message" placeholder="Message" rows="7"></textarea>
+                    <div class="row">
+                      <div class="12u field">
+                        <ul class="buttons">
+                          <li><input name="submitted" id="send" value="Send Message" class="button special" type="submit"></li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="12u field">
-                      <ul class="buttons">
-                        <li><input name="submitted" id="send" value="Send Message" class="button special" type="submit"></li>
-                      </ul>
-                    </div>
-                  </div>
+                </div>
+
                    <div class="loading"></div>
-
-
-
                     <div class="alert alert-success success-message">
                   <strong>Success!</strong><br>Your message has been sent.
                 </div>
@@ -260,7 +258,7 @@
               </div>
 
           </section>
--->
+
       </article>
 
       <%- include('partials/footer.ejs'); -%>
