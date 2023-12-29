@@ -3,6 +3,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var robots = require('robots.txt');
+var dotenv = require('dotenv/config');
 
 var app = express();
 
@@ -19,8 +20,6 @@ var faas = require('./routes/faas');
 
 //enviroment
 var env = process.env.NODE_ENV || 'development';
-
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

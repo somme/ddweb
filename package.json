@@ -13,7 +13,8 @@
     "express": "^4.18.2",
     "path": "^0.11.14",
     "robots.txt": "^1.1.0",
-    "serve-favicon": "^2.2.0"
+    "serve-favicon": "^2.2.0",
+    "dotenv": "^16.0.3"
   },
   "engines": {
     "node": "^16.18.1"

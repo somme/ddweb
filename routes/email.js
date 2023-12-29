@@ -7,8 +7,8 @@ var router = express.Router();
 
 router.post('/', function(req, res) {
     const msg = {
-    to: 'somme@dragondrop.ltd',
-    from: 'somme@dragondrop.ltd',
+    to: 'info@dragondrop.ltd',
+    from: 'info@dragondrop.ltd',
     subject: 'Dragon Drop Contact Form',
     text: req.body.message,
     html: `<p><strong>NAME:</strong> ${req.body.name}</p><p><strong>EMAIL:</strong> ${req.body.email}</p><p><strong>MESSAGE:</strong> ${decodeURI(req.body.message)}</p>`,
@@ -17,7 +17,6 @@ router.post('/', function(req, res) {
   sgMail
   .send(msg)
   .then(() => {
-    console.log('Email sent')
     res.send('ok');
   })
   .catch((error) => {
